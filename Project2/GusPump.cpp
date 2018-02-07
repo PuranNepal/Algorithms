@@ -23,10 +23,12 @@ void  GasPump::replenishFuel() {
 
 //Crux of this program (unfinished) 
 void GasPump::dispenseFuel(double amountRequested) {
+	/*
 	std::cout << std::fixed;
 	std::cout.precision(2);
 	
 	std::cout << "vehicle " << gasType << " filled up with " << amountLevel << " gallons $" << amountLevel*pricePerGallon << endl;
 	amountOfFuelPerPurchase = amountLevel;
-	total
+	total*/
+	std::cout << "hey" << std::endl;
 }
