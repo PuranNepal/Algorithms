@@ -11,16 +11,18 @@ Lab number: ola3
 #include <math.h>
 using namespace std;
 
+const int MAX_SIZE = 10;
+
 //displays a given matrix
-void displayMatrix(float aMatrix[][10], int aSize);
+void displayMatrix(float aMatrix[][MAX_SIZE], int aSize);
 
 //initializes a identity matrix
-void InitializeIdentity(float aMatrix[][10], int aSize);
+void InitializeIdentity(float aMatrix[][MAX_SIZE], int aSize);
 
 int main(){
 	int size; //dimension of the square matrix 
-	float A[10][10]; //given matrix we want to invert
-	float I[10][10]; //identity matrix which will encode our answer
+	float A[MAX_SIZE][MAX_SIZE]; //given matrix we want to invert
+	float I[MAX_SIZE][MAX_SIZE]; //identity matrix which will encode our answer
 
 
 	//user input for Matrix A
@@ -82,7 +84,7 @@ int main(){
 
 //this function initializes a aSize X aSize Identity matrix 
 //smaller than 11
-void InitializeIdentity(float aMatrix[][10], int aSize){
+void InitializeIdentity(float aMatrix[][MAX_SIZE], int aSize){
 
 
 	for (int i = 0; i < aSize; i++)
@@ -103,7 +105,7 @@ void InitializeIdentity(float aMatrix[][10], int aSize){
 
 
 //this function displays a Matrix smaller than 11
-void displayMatrix(float aMatrix[][10], int aSize){
+void displayMatrix(float aMatrix[][MAX_SIZE], int aSize){
 
 	cout << "The inverse Matrix is: " << endl;
 		for (int i = 0; i < aSize; i++)
