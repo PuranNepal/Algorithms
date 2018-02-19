@@ -8,7 +8,6 @@ Lab number: ola3
 */
 
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 const int MAX_SIZE = 10;
